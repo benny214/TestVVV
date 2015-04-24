@@ -1,0 +1,49 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        title SuperJob Test
+        link(rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+        link(rel="stylesheet" href="styles/style.min.css")
+        script(src="scripts/jquery-1.11.2.min.js")
+        script(src="scripts/main.min.js")
+    body
+        a.registration Зарегистрироваться
+        .registration-form
+            input#first.content1(type="radio" name='tabs' checked)
+            label.first(for="first")
+                i.fa.fa-user.fa-3x
+            input#second.content2(type="radio" name='tabs')
+            label.second(for="second")
+                i.fa.fa-picture-o.fa-3x
+            input#third.content3(type="radio" name='tabs')
+            label.third(for="third")
+                i.fa.fa-check.fa-3x
+            span.arrow
+            ul
+                li.content1
+                    form
+                        input#name(type="text" value="")
+                        label(for="name") Имя
+                    form
+                        input#surname(type="text" value="")
+                        label(for="surname") Фамилия
+                    form
+                        input#email(type="email" value="")
+                        label(for="email") Е-mail
+                    form
+                        input#password(type="password" value="")
+                        label(for="password") Парроль
+                li.content2
+                    form
+                        input#add-img(type="file" accept="image/*")
+                        label(for="add-img") Загрузить изображение
+                            br/
+                            i.fa.fa-picture-o.fa-5x
+                li.content3
+                    form
+                        input#check-password(type="password")
+                        label(for="check-password") Подтвердите пароль
+            button.cancel Отменить
+            button.prev Назад
+            button.next Продолжить

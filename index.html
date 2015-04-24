@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>SuperJob Test</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <script src="scripts/jquery-1.11.2.min.js"></script>
+    <script src="scripts/main.min.js"></script>
+  </head>
+  <body><a class="registration">Зарегистрироваться</a>
+    <div class="registration-form">
+      <input id="first" type="radio" name="tabs" checked class="content1">
+      <label for="first" class="first"><i class="fa fa-user fa-3x"></i></label>
+      <input id="second" type="radio" name="tabs" class="content2">
+      <label for="second" class="second"><i class="fa fa-picture-o fa-3x"></i></label>
+      <input id="third" type="radio" name="tabs" class="content3">
+      <label for="third" class="third"><i class="fa fa-check fa-3x"></i></label><span class="arrow"></span>
+      <ul>
+        <li class="content1">
+          <form>
+            <input id="name" type="text" value="">
+            <label for="name">Имя</label>
+          </form>
+          <form>
+            <input id="surname" type="text" value="">
+            <label for="surname">Фамилия</label>
+          </form>
+          <form>
+            <input id="email" type="email" value="">
+            <label for="email">Е-mail</label>
+          </form>
+          <form>
+            <input id="password" type="password" value="">
+            <label for="password">Парроль</label>
+          </form>
+        </li>
+        <li class="content2">
+          <form>
+            <input id="add-img" type="file" accept="image/*">
+            <label for="add-img">Загрузить изображение<br><i class="fa fa-picture-o fa-5x"></i></label>
+          </form>
+        </li>
+        <li class="content3">
+          <form>
+            <input id="check-password" type="password">
+            <label for="check-password">Подтвердите пароль</label>
+          </form>
+        </li>
+      </ul>
+      <button class="cancel">Отменить</button>
+      <button class="prev">Назад</button>
+      <button class="next">Продолжить</button>
+    </div>
+  </body>
+</html>
